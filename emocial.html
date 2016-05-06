@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>FeedBack Form</title>
+    <!-- import of all base and tools -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="emocial.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+</head>
+
+<body data-ng-app="monApp">
+    <div class="intro">
+        <h1>
+            Tell us a bit about your satisfaction
+        </h1>   
+    </div>
+    <div class="fields" role="form" data-ng-controller="formController">
+        <form data-ng-submit="submit()">
+            <p>
+                Name :<br>
+                <input type="text" name="name" aria-required="true" value size="30" data-ng-model="user.name">
+            </p>
+            <p>
+                Last Name :<br>
+                <input type="text" name="lastName" aria-required="true" value size="30" data-ng-model="user.lastName">
+            </p>
+            <p>
+                Email Adress :<br>
+                <input type="email" name="email" aria-required="true" value size="30" data-ng-model="user.email">
+            </p>
+            <p>
+                Phone Number :<br>
+                <input type="tel" name="phone" aria-required="true" value size="30" data-ng-model="user.phone">
+            </p>
+            <p>
+                FeedBack :<br>
+                <textarea name="description" aria-required="true" data-ng-model="user.description"></textarea>
+            </p>
+            <p>
+            <input type="submit" value="Send" class="btn btn-info"/>
+            </p>
+        </form>       
+    </div>
+</body>
+</html>
+programing test for emocial
+made by Antoine Goubin
